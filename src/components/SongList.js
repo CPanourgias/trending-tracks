@@ -3,6 +3,7 @@ import Song from './Song';
 
 const SongList = ({ tracks }) => {
     return (
+        // Returns each Song component with its props
         <section className="cf w-100 pa2-ns ma2 pa2">
             { tracks.map((data, i) => {
                 return (

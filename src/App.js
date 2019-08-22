@@ -16,6 +16,7 @@ class App extends React.Component {
     // eslint-disable-next-line
     fetch('https://cors-anywhere.herokuapp.com/https://api-stg.jam-community.com/song/trending')
     .then((response) => response.json())
+    // Update the state with the received data
     .then(data => {this.setState({ tracks: data})})
     .catch(error => console.log(error))
   }
@@ -24,9 +25,11 @@ class App extends React.Component {
     const { tracks } = this.state;
     return(
       <div className="App">
+        {/* The header of the app */}
         <header className="black-80 tc pv4 avenir">
         <h1 className="mt2 mb0 f6 fw4 ttu tracked">JAM's trending tracks</h1>
         </header>
+        {/* List of songs section */}
         <section className="cf fl w-100 w-100-ns tc pa3 ma3">
           <SongList tracks={tracks}/>
        </section>
