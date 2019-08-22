@@ -35,7 +35,7 @@ class CommentButton extends React.Component {
     render() {
         return (
             <div>
-                <textarea id="comment" name="comment" className="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2" onKeyPress={this.handleEnter} aria-describedby="comment-desc" placeholder="Enter your comment here and press Enter" />
+                <textarea id="comment" name="comment" className="db border-box hover-black w-100 measure ba b--black-20 pa2 br2 mb2" onKeyPress={this.handleEnter} aria-describedby="comment-desc" placeholder="Comment here and press Enter" />
             </div>
         );
     }

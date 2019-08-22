@@ -9,13 +9,13 @@ class Song extends React.Component {
     
     render() {
         return (
-            <article className="fl w-100 w-50-m w-25-ns pa3-ns bw2 shadow-5 dib">
+            <article className="fl w-100 w-50-m w-25-ns pa5-ns bw2 shadow-5">
+                <h2 className="f6 fw4 tracked">{this.props.name}</h2>
                 <div className="aspect-ratio aspect-ratio--1x1">
                 <img src={this.props.thumbnail} alt="Thumbnail" className="db bg-center cover aspect-ratio--object" />
                 </div>
                 <div className="ph2 ph0-ns pb3 db">
-                    <AudioCard 
-                        title={this.props.name}
+                    <AudioCard
                         source={this.props.audio}
                         skipBackSeconds={10}
                         skipForwardSeconds={10}

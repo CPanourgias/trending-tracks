@@ -3,7 +3,7 @@ import Song from './Song';
 
 const SongList = ({ tracks }) => {
     return (
-        <section className="cf w-100 pa2-ns">
+        <section className="cf w-100 pa2-ns ma2 pa2">
             { tracks.map((data, i) => {
                 return (
                     <Song
